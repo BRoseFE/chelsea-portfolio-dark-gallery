@@ -1,4 +1,4 @@
-# Chelsea Rose – Art Portfolio (React)
+# Chelsea Rose - Art Portfolio (React)
 
 A responsive React portfolio showcasing original artwork by Chelsea Rose.
 This project focuses on clean component architecture, accessible semantic HTML, and a scalable structure for managing artwork content without over-engineering.
@@ -13,16 +13,16 @@ This project focuses on clean component architecture, accessible semantic HTML, 
 
 ## ✨ Features
 
-* Responsive artwork gallery layout
-* Individual artwork pages with metadata
-* Featured artwork section on the homepage
-* Client-side routing with React Router
-* Accessible semantic HTML structure
-* Reusable component architecture
-* Optimized image loading using WebP
-* Centralized artwork data module
-* Dynamic image path utilities based on artwork slugs
-* SPA routing configured for Netlify deployment
+- Responsive artwork gallery layout
+- Individual artwork pages with metadata
+- Featured artwork section on the homepage
+- Client-side routing with React Router
+- Accessible semantic HTML structure
+- Reusable component architecture
+- Optimized image loading using WebP
+- Centralized artwork data module
+- Dynamic image path utilities based on artwork slugs
+- SPA routing configured for Netlify deployment
 
 ---
 
@@ -46,17 +46,17 @@ Artwork content is managed through a centralized data module.
 
 Each artwork entry includes:
 
-* title
-* year
-* description
-* slug
-* featured ranking
+- title
+- year
+- description
+- slug
+- featured ranking
 
 The slug is used to dynamically generate:
 
-* thumbnail image paths
-* full artwork image paths
-* artwork routes
+- thumbnail image paths
+- full artwork image paths
+- artwork routes
 
 Images follow a consistent structure:
 
@@ -71,33 +71,33 @@ Utility helpers generate the paths automatically so components remain clean and 
 
 ## 🧠 Design & Engineering Decisions
 
-* **Centralized artwork data**
-  All artwork metadata lives in `src/data/artworks.js`. This keeps the UI components simple and allows artwork content to be modified without touching presentation logic.
+- **Centralized artwork data**
+  All artwork metadata lives in `src/data/artworks.jsx`. This keeps the UI components simple and allows artwork content to be modified without touching presentation logic.
 
-* **Slug-based image system**
+- **Slug-based image system**
   Image paths are generated dynamically using utility functions (`getThumbPath`, `getFullPath`). This avoids hardcoding asset paths throughout the codebase.
 
-* **Component reuse**
+- **Component reuse**
   Shared components such as artwork cards, buttons, header, footer, and the about section are reused across multiple pages to keep the UI consistent.
 
-* **Semantic HTML**
+- **Semantic HTML**
   Landmarks such as `header`, `nav`, `main`, `section`, `article`, and `figure` are used intentionally to improve accessibility and document structure.
 
-* **Deployment configuration**
+- **Deployment configuration**
   A Netlify `_redirects` file ensures client-side routing works correctly when refreshing pages or accessing routes directly.
 
-* **Testing**
+- **Testing**
   Basic testing files are included via Create React App setup. The primary focus of this project is component structure, routing behaviour, and accessibility.
 
 ---
 
 ## 🧱 Tech Stack
 
-* **React**
-* **React Router**
-* **CSS Modules**
-* **JavaScript (ES6+)**
-* **Netlify (Deployment)**
+- **React**
+- **React Router**
+- **CSS Modules**
+- **JavaScript (ES6+)**
+- **Vercel (Deployment)**
 
 No UI frameworks or component libraries were used — layout and styling are fully custom.
 
@@ -108,9 +108,7 @@ No UI frameworks or component libraries were used — layout and styling are ful
 ```text
 public
 ├── artwork/              # artwork images organized by slug
-├── index.html
-├── manifest.json
-└── _redirects            # Netlify SPA routing
+└── manifest.json
 
 src
 ├── assets/
@@ -118,27 +116,27 @@ src
 │   └── textures/
 │
 ├── data/
-│   └── artworks.js       # centralized artwork metadata
+│   └── artworks.jsx       # centralized artwork metadata
 │
 ├── pages/                # route-level components
-│   ├── home/
-│   ├── portfolio/
+│   ├── about/
 │   ├── artwork/
-│   └── about/
+│   ├── home/
+│   └── portfolio/
 │
 ├── shared/               # reusable UI components
 │   └── components/
-│       ├── header/
-│       ├── footer/
-│       ├── button/
+│       ├── about/
 │       ├── artwork-card/
-│       └── about/
+│       ├── button/
+│       ├── footer/
+│       └── header/
 │
 ├── utils/                # helper functions
 │   └── imagePaths.js
 │
-├── App.js
-└── index.js
+├── App.jsx
+└── main.jsx
 ```
 
 Components are grouped primarily by **feature** and **shared functionality**, keeping the codebase easier to scale and reason about as the project grows.
@@ -151,11 +149,11 @@ This project represents a complete, production-ready portfolio for displaying ar
 
 Potential future enhancements could include:
 
-* Artwork filtering and categorization
-* Search functionality
-* Admin interface for managing artwork entries
-* Image lazy loading improvements
-* Expanded artwork metadata and tagging
+- Artwork filtering and categorization
+- Search functionality
+- Admin interface for managing artwork entries
+- Image lazy loading improvements
+- Expanded artwork metadata and tagging
 
 ---
 
@@ -163,5 +161,5 @@ Potential future enhancements could include:
 
 ```bash
 npm install
-npm start
+npm run dev
 ```

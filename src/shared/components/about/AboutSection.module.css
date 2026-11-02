@@ -1,0 +1,27 @@
+.about { padding: clamp(3.5rem, 7vw, 6rem) 0 clamp(4rem, 8vw, 7rem); }
+.aboutInner { width: min(var(--max-width), 100%); margin: 0 auto; padding: 0 var(--page-gutter); }
+.aboutHeader { margin-bottom: 2rem; }
+.aboutKicker { margin: 0 0 .5rem; color: var(--color-accent); font-size: .63rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.aboutHeaderTitle { margin: 0; color: var(--color-text); font-size: clamp(2.2rem, 4vw, 3.2rem); letter-spacing: -.035em; }
+.aboutContent {
+  display: grid;
+  grid-template-columns: minmax(230px, 340px) minmax(0, 1fr);
+  gap: clamp(2rem, 6vw, 5.5rem);
+  align-items: center;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(135deg, rgba(255,255,255,.025), transparent 65%), var(--color-bg-elevated);
+}
+.aboutImageContainer { margin: 0; min-width: 0; }
+.aboutImageContainer figcaption { padding-top: .65rem; color: #77736c; font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; }
+.aboutImage { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: saturate(.82); }
+.aboutText { display: grid; gap: 1rem; align-content: center; }
+.aboutIntro { margin: 0; color: var(--color-text); font-family: var(--font-heading); font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1.2; letter-spacing: -.02em; }
+.aboutContentText { max-width: 62ch; color: var(--color-text-muted); font-size: .9rem; line-height: 1.9; }
+.aboutContentText p { margin: 0 0 1rem; }
+.aboutContentText p:last-child { margin-bottom: 0; }
+.aboutActions { margin-top: .5rem; }
+@media (max-width: 800px) {
+  .aboutContent { grid-template-columns: minmax(0, 1fr); gap: 1.7rem; }
+  .aboutImageContainer { max-width: 420px; width: 100%; margin: 0 auto; }
+}

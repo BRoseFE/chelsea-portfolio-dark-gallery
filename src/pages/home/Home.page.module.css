@@ -1,0 +1,81 @@
+.home { overflow: hidden; }
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: min(var(--max-width), 100%);
+  min-height: 560px;
+  margin: 0 auto;
+  padding: clamp(5rem, 10vw, 9rem) var(--page-gutter) clamp(4rem, 8vw, 7rem);
+}
+.heroInner { max-width: 790px; position: relative; z-index: 1; }
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin-bottom: 1.7rem;
+  color: var(--color-accent);
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
+.eyebrow span { width: 25px; height: 1px; background: var(--color-accent); }
+.heroTitle {
+  margin: 0;
+  font-size: clamp(3.5rem, 8vw, 7.2rem);
+  line-height: .99;
+  letter-spacing: -.055em;
+}
+.heroTitle em { color: var(--color-accent); font-weight: 500; }
+.heroDescription {
+  max-width: 510px;
+  margin: 1.8rem 0 2rem;
+  color: var(--color-text-muted);
+  font-size: clamp(.95rem, 1.5vw, 1.08rem);
+  line-height: 1.9;
+}
+.heroActions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.8rem; }
+.primaryLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.3rem;
+  padding: .9rem 1.15rem;
+  color: #171512;
+  background: var(--color-accent);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background .2s ease, transform .2s ease;
+}
+.primaryLink:hover { background: #ddc29b; transform: translateY(-2px); }
+.primaryLink span { font-size: 1rem; }
+.secondaryLink {
+  color: var(--color-text-muted);
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+.secondaryLink:hover { color: var(--color-text); }
+.heroNote {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+  margin-top: clamp(3.5rem, 7vw, 6rem);
+  color: #77736c;
+  font-size: .62rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.heroNote span { color: var(--color-accent); }
+.heroRule { position: absolute; right: var(--page-gutter); bottom: 0; left: var(--page-gutter); height: 1px; background: var(--color-border); }
+@media (max-width: 600px) {
+  .hero { min-height: 0; padding-top: 5rem; padding-bottom: 4rem; }
+  .heroTitle { font-size: clamp(3.1rem, 14vw, 5rem); }
+  .heroActions { align-items: flex-start; flex-direction: column; gap: 1.2rem; }
+  .heroNote { margin-top: 3.5rem; }
+}

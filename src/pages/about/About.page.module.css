@@ -1,0 +1,5 @@
+.aboutPage { width: min(var(--max-width), 100%); margin: 0 auto; padding: clamp(3rem, 6vw, 5rem) 0 2rem; }
+.aboutPageHeader { padding: 0 var(--page-gutter); }
+.aboutPageEyebrow { margin: 0 0 .5rem; color: var(--color-accent); font-size: .63rem; font-weight: 700; letter-spacing: .18em; text-align: center; text-transform: uppercase; }
+.aboutPageTitle { margin: 0; color: var(--color-text); font-size: clamp(3rem, 7vw, 5rem); line-height: 1; letter-spacing: -.045em; text-align: center; }
+.aboutSection { display: block; }

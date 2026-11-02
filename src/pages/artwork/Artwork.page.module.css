@@ -1,0 +1,40 @@
+.artworkPage { min-height: 70vh; padding: clamp(2rem, 5vw, 4rem) var(--page-gutter) 6rem; }
+.artworkPageInner { width: min(var(--max-width), 100%); margin: 0 auto; }
+.artworkPageNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  color: #77736c;
+  font-size: .65rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.artworkPageNavLink { color: var(--color-text-muted); text-decoration: none; transition: color .2s ease; }
+.artworkPageNavLink:hover { color: var(--color-accent); }
+.artworkLayout { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(260px, .65fr); align-items: start; gap: clamp(2rem, 6vw, 5.5rem); }
+.artworkFigure { min-width: 0; margin: 0; }
+.imageWrap { display: flex; justify-content: center; padding: clamp(.75rem, 2vw, 1.5rem); background: #1a1917; border: 1px solid var(--color-border); }
+.artworkPageImage { width: 100%; max-height: 78vh; object-fit: contain; }
+.artworkMetaSignature { padding: .8rem .1rem 0; color: #77736c; font-size: .62rem; letter-spacing: .1em; text-align: right; }
+.artworkMeta { position: sticky; top: 125px; padding-top: 1.3rem; }
+.artworkEyebrow { margin: 0 0 1rem; color: var(--color-accent); font-size: .63rem; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+.artworkMetaTitle { margin: 0; font-size: clamp(2.5rem, 4.5vw, 4.5rem); line-height: 1.04; letter-spacing: -.04em; }
+.metaRule { width: 48px; height: 1px; margin: 1.7rem 0; background: var(--color-accent); }
+.artworkMetaDescription { max-width: 42ch; color: var(--color-text-muted); font-size: .95rem; line-height: 1.9; }
+.moreWorkLink { display: inline-flex; gap: 1rem; margin-top: 1.7rem; padding-bottom: .35rem; border-bottom: 1px solid var(--color-accent); color: var(--color-text); font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; transition: color .2s ease; }
+.moreWorkLink:hover { color: var(--color-accent); }
+.moreWorkLink span { color: var(--color-accent); }
+.notFound { width: min(var(--max-width), 100%); margin: 0 auto; padding: 6rem var(--page-gutter); }
+.notFound h1 { font-size: 3rem; }
+.notFound a { color: var(--color-accent); }
+@media (max-width: 800px) {
+  .artworkLayout { grid-template-columns: 1fr; gap: 1.8rem; }
+  .artworkMeta { position: static; padding-top: 0; }
+  .artworkMetaTitle { font-size: clamp(2.5rem, 8vw, 4rem); }
+}
+@media (max-width: 520px) {
+  .artworkPageNav { align-items: flex-start; flex-direction: column; }
+  .artworkPageImage { max-height: none; }
+}

@@ -18,7 +18,7 @@ function AboutPage() {
 							<p>
 								I began drawing with my cousin when we were
 								children, sometime before the age of ten. It was
-								not anything formal—just moments here and there
+								not anything formal-just moments here and there
 								with pencils and paper, filling quiet spaces the
 								way children do.
 							</p>
@@ -27,7 +27,7 @@ function AboutPage() {
 								older the noise of it did not fade. What I did
 								notice, though, was how deeply aware I was of
 								people. I have always been sensitive to the
-								small things others might miss—the quick shift
+								small things others might miss-the quick shift
 								in someone's expression, the tension in a smile,
 								the micro expressions that pass across a face
 								for only a second before disappearing again.
@@ -43,8 +43,8 @@ function AboutPage() {
 								Drawing has become the place where I do that.
 								What started as a quiet childhood activity has
 								grown into something much more necessary. It's
-								where I slow things down, where moments—past and
-								present—can be examined, understood and
+								where I slow things down, where moments-past and
+								present-can be examined, understood and
 								sometimes finally released.
 							</p>
 							<p>

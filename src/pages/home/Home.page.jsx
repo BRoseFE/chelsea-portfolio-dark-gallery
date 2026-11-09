@@ -31,7 +31,7 @@ function HomePage() {
 						</Link>
 					</div>
 					<div className={styles.heroNote}>
-						<span>01</span> Selected works · 2021—2026
+						<span>01</span> Selected works · 2021-2026
 					</div>
 				</div>
 				<div className={styles.heroRule} aria-hidden="true" />

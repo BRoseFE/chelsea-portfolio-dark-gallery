@@ -6,7 +6,14 @@ function Footer() {
 			<div className={styles.footerInner}>
 				<small className={styles.footerCopyright}>
 					© {new Date().getFullYear()} Chelsea Rose - Drawings •
-					Website by Branson Rose
+					Website by{" "}
+					<a
+						href="https://bransonrose.dev"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Branson Rose
+					</a>
 				</small>
 			</div>
 		</footer>
